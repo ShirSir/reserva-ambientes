@@ -7,6 +7,7 @@ const usuario_model = require('../modelos/Usuario');
 
 const conexion = new Sequelize("hOaLAGSo1I", "hOaLAGSo1I", "k9H63P4yGr", {
   //ambientes", "root", "root",
+  //host:'localhost'
   host: 'remotemysql.com',
   dialect: 'mysql',
   dialectOptions: {
