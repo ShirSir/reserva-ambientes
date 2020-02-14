@@ -97,7 +97,8 @@ const getReservaByFechas = (req,res)=>{
                 res_fechfin: {[Op.between]: [fecha_inicio,fecha_fin]}
             }]}
     }).then(reservas=>{
-        if (reservas){
+        //Validamos que la longitud de las reservas sea diferente de 0
+        if (reservas.length!=0){
             res.status(200).json({
                 ok:true,
                 mensaje:'Ya hay una reserva en esa fecha',

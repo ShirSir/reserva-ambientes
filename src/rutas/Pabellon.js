@@ -15,4 +15,3 @@ pabellon_router.get('/pabellonreservas/:id_pabellon', Pabellones.getReservaByPab
 module.exports = {
   pabellon_router: pabellon_router
 }
-//HACER COMMIT EN HEROKU OTRA VEZ
